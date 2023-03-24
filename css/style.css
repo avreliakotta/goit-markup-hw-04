@@ -189,21 +189,20 @@ img {
   display: flex;
 }
 .benefits-item {
-  width: calc((100%-72px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 .benefits-list .benefits-item + .benefits-item {
   margin-left: 24px;
 }
-.benefits-icon {
+.icon-item {
   height: 112px;
-  width: 264px;
-  display: inline-block;
   background-color: var(--additional-color);
   border: none;
   border-radius: 4px;
   margin-bottom: 8px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .subtitle {
@@ -322,6 +321,7 @@ img {
 .filter-button:focus {
   background-color: var(--branding-color);
   color: var(--invent-color);
+  border: 1px solid var(--branding-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -333,6 +333,7 @@ img {
 .content {
   padding-top: 32px;
   padding-bottom: 32px;
+  padding-left: 16px;
   background-color: var(--invent-color);
   border: 1px solid var(--rare-color);
   border-top: transparent;
@@ -349,9 +350,12 @@ img {
   margin-left: 24px;
   margin-top: 48px;
 }
+.work-link {
+  display: block;
+}
 
-.work-card:hover,
-.work-card:focus {
+.work-link:hover,
+.work-link:focus {
   box-shadow: var(--box-shadow);
 }
 /*Customers*/
@@ -374,7 +378,7 @@ img {
 }
 
 .customers-item {
-  width: 168px;
+  width: calc((100% - 120px) / 6);
   height: 88px;
 }
 .customers-link {
